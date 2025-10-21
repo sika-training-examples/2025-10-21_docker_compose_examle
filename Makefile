@@ -13,6 +13,9 @@ down-with-volumes:
 use-caddy:
 	echo 'COMPOSE_FILE=compose.base.yml:compose.scaled.yml:compose.caddy.yml' >> .env
 
+use-traefik-internal:
+	echo 'COMPOSE_FILE=compose.base.yml:compose.scaled.yml:compose.traefik-internal.yml' >> .env
+
 use-ports:
 	echo 'COMPOSE_FILE=compose.base.yml:compose.ports.yml' >> .env
 

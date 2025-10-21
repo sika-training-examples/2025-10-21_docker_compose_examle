@@ -2,3 +2,7 @@ services:
   counter:
     deploy:
       replicas: 4
+
+  counter-frontend:
+    deploy:
+      replicas: 4
