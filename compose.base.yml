@@ -1,0 +1,16 @@
+services:
+  counter:
+    build: .
+    image: ttl.sh/dte/simple-compose/counter
+    depends_on:
+      - redis
+    environment:
+      REDIS: redis
+
+  redis:
+    image: redis
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:
