@@ -16,6 +16,9 @@ use-caddy:
 use-traefik-internal:
 	echo 'COMPOSE_FILE=compose.base.yml:compose.scaled.yml:compose.traefik-internal.yml' >> .env
 
+use-traefik-external:
+	echo 'COMPOSE_FILE=compose.base.yml:compose.scaled.yml:compose.traefik-external.yml' >> .env
+
 use-ports:
 	echo 'COMPOSE_FILE=compose.base.yml:compose.ports.yml' >> .env
 
